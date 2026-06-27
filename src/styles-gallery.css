@@ -1,0 +1,41 @@
+.gallery-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/images/gallery/IMG_3728.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    min-height: 400px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 76px;
+}
+
+.gallery-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-modal .modal-content {
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.lightbox-modal .modal-body {
+    text-align: center;
+}
+
+.lightbox-modal img {
+    max-height: 80vh;
+    width: auto;
+    margin: 0 auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .gallery-hero h1 {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,80 @@
+export const toursPorvenirDestinations = [
+  {
+    id: 'museo-provincial',
+    name: 'Museo Provincial',
+    image: '/images/services/tours-porvenir/museo.jpg',
+    description: 'Historia y cultura de Tierra del Fuego.',
+  },
+  {
+    id: 'mirador-hain',
+    name: 'Mirador Hain',
+    image: '/images/services/tours-porvenir/mirador_hain.jpg',
+    description: 'Vistas panorámicas de la estepa fueguina.',
+  },
+  {
+    id: 'estromatolitos',
+    name: 'Estromatolitos',
+    image: '/images/services/tours-porvenir/estromatolitos.jpg',
+    description: 'Formaciones geológicas únicas en la región.',
+  },
+  {
+    id: 'estromatolitos-laguna',
+    name: 'Estromatolitos en la laguna',
+    image: '/images/services/tours-porvenir/estromatolitos_laguna.jpeg',
+    description: 'Formaciones vivas junto a la orilla de Laguna de los Cisnes.',
+  },
+  {
+    id: 'estromatolitos-panoramica',
+    name: 'Panorámica de estromatolitos',
+    image: '/images/services/tours-porvenir/estromatolitos_panoramica.jpeg',
+    description: 'Vista amplia de los estromatolitos en su hábitat natural.',
+  },
+  {
+    id: 'faro',
+    name: 'Faro',
+    image: '/images/services/tours-porvenir/faro.jpg',
+    description: 'El faro emblemático de la costa fueguina.',
+  },
+  {
+    id: 'selknam',
+    name: 'Selknam',
+    image: '/images/services/tours-porvenir/selknam.jpg',
+    description: 'Memoria y legado del pueblo Selk\'nam.',
+  },
+  {
+    id: 'flamencos',
+    name: 'Flamencos',
+    image: '/images/services/tours-porvenir/flamencos.jpg',
+    description: 'Avifauna patagónica en su hábitat natural.',
+  },
+  {
+    id: 'plaza',
+    name: 'Plaza',
+    image: '/images/services/tours-porvenir/plaza.jpg',
+    description: 'El corazón cívico de Porvenir.',
+  },
+  {
+    id: 'plaza-vista',
+    name: 'Vista Plaza',
+    image: '/images/services/tours-porvenir/plaza_.jpg',
+    description: 'Encuentro y vida local en el centro.',
+  },
+  {
+    id: 'aeronave',
+    name: 'Aeronave',
+    image: '/images/services/tours-porvenir/aeronave.jpg',
+    description: 'Patrimonio aeronáutico de la región.',
+  },
+  {
+    id: 'costanera',
+    name: 'Costanera',
+    image: '/images/services/tours-porvenir/costanera.jpg',
+    description: 'Paseo junto al Estrecho de Magallanes.',
+  },
+  {
+    id: 'costanera-vista',
+    name: 'Vista Costanera',
+    image: '/images/services/tours-porvenir/costanera_.jpg',
+    description: 'Panorámicas de la bahía de Porvenir.',
+  },
+];

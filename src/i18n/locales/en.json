@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Discover Porvenir, Tierra del Fuego - Transport and tourism"
+  },
+  "language": {
+    "label": "Language",
+    "es": "Spanish",
+    "en": "English"
+  },
+  "nav": {
+    "services": "Services",
+    "tours": "Tours",
+    "transport": "Transport",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Discover <1>Porvenir, Tierra del Fuego</1>",
+    "subtitle": "Enjoy an unforgettable experience at the end of the world with our tours and transport services.",
+    "cta": "Explore Routes"
+  },
+  "services": {
+    "title": "Our Services",
+    "viewDetails": "View details",
+    "transport": "Transport",
+    "pinguineras": "Penguin Colony Tours",
+    "porvenir": "Porvenir Tours",
+    "outOfCity": "Trips outside the city"
+  },
+  "toursSection": {
+    "title": "Tours and Excursions",
+    "museumLine1": "Provincial Museum of Tierra del Fuego,",
+    "museumLine2": "Fernando Cordero Rusque",
+    "hainLine1": "Hain Viewpoint",
+    "hainLine2": "Porvenir, Tierra del Fuego",
+    "penguinPark": "King Penguin Park",
+    "stromatolitesLine1": "Stromatolites Park,",
+    "stromatolitesLine2": "Laguna de los Cisnes",
+    "ferryLine1": "Ferry Boat",
+    "ferryLine2": "Transfer from ferry arrival"
+  },
+  "transportSection": {
+    "title": "Our Transport Services",
+    "privateTitle": "Private Transfers",
+    "privateDesc": "Comfortable vehicles for your transfers.",
+    "sharedTitle": "Shared Transport",
+    "sharedDesc": "An affordable and safe option to get around the city.",
+    "book": "Book"
+  },
+  "gallerySection": {
+    "title": "Unforgettable Moments Gallery",
+    "prev": "← Previous",
+    "next": "Next →",
+    "page": "Page {{current}} of {{total}}"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "ctaText": "Ready to experience Tierra del Fuego? Message us on WhatsApp and we'll reply shortly.",
+    "whatsappBtn": "Message us on WhatsApp",
+    "infoTitle": "Contact information",
+    "location": "Location",
+    "phone": "Phone / WhatsApp",
+    "email": "Email"
+  },
+  "footer": {
+    "copyright": "© {{year}} Tänu. All rights reserved."
+  },
+  "modal": {
+    "close": "Close",
+    "consult": "Check availability",
+    "prevPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
+    "photoCounter": "{{current}} / {{total}}"
+  },
+  "lightbox": {
+    "close": "Close"
+  },
+  "whatsapp": {
+    "consultWithDestination": "Hello, I would like to check availability for {{service}}: {{destination}}.",
+    "consult": "Hello, I would like to check availability for {{service}}.",
+    "reserve": "Hello, I would like to book {{service}}.",
+    "contact": "Hello, I would like to receive information about tours and services in Porvenir."
+  }
+}

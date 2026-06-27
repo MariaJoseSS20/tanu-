@@ -1,0 +1,287 @@
+{
+  "destinations": {
+    "transporte": {
+      "bus": {
+        "name": "Tänu Vehicle",
+        "description": "Transfers and tours with comfort in Tierra del Fuego.",
+        "highlights": [
+          "Affordable, safe and reliable transport.",
+          "Round-trip transfers.",
+          "Trips to the ferry.",
+          "Ask about your location."
+        ]
+      }
+    },
+    "porvenir": {
+      "museo-provincial": {
+        "name": "Provincial Museum",
+        "description": "History and culture of Tierra del Fuego."
+      },
+      "mirador-hain": {
+        "name": "Hain Viewpoint",
+        "description": "Panoramic views of the Fuegian steppe."
+      },
+      "estromatolitos": {
+        "name": "Stromatolites",
+        "description": "Unique geological formations in the region."
+      },
+      "estromatolitos-laguna": {
+        "name": "Stromatolites at the lagoon",
+        "description": "Living formations along the shore of Laguna de los Cisnes."
+      },
+      "estromatolitos-panoramica": {
+        "name": "Stromatolites panorama",
+        "description": "Wide view of the stromatolites in their natural habitat."
+      },
+      "faro": {
+        "name": "Lighthouse",
+        "description": "The iconic lighthouse on the Fuegian coast."
+      },
+      "selknam": {
+        "name": "Selk'nam",
+        "description": "Memory and legacy of the Selk'nam people."
+      },
+      "flamencos": {
+        "name": "Flamingos",
+        "description": "Patagonian birdlife in its natural habitat."
+      },
+      "plaza": {
+        "name": "Town Square",
+        "description": "The civic heart of Porvenir."
+      },
+      "plaza-vista": {
+        "name": "Square View",
+        "description": "Community life in the town center."
+      },
+      "aeronave": {
+        "name": "Aircraft",
+        "description": "Regional aviation heritage."
+      },
+      "costanera": {
+        "name": "Waterfront",
+        "description": "A walk along the Strait of Magellan."
+      },
+      "costanera-vista": {
+        "name": "Waterfront View",
+        "description": "Panoramas of Porvenir Bay."
+      }
+    },
+    "pinguineras": {
+      "parque-pinguino-rey": {
+        "name": "King Penguin Park",
+        "description": "Silhouettes of king penguins at sunset in Bahía Inútil."
+      },
+      "pinguineras-01": {
+        "name": "Colony facing the sea",
+        "description": "Large king penguin colony with the ocean in the background."
+      },
+      "pinguineras-02": {
+        "name": "Coast at sunset",
+        "description": "Penguins resting on the coastal meadow under a dramatic sky."
+      },
+      "pinguineras-03": {
+        "name": "Penguin in the colony",
+        "description": "A king penguin walking toward the colony by the water."
+      },
+      "pinguineras-04": {
+        "name": "Brown chicks",
+        "description": "Adult and chick king penguins gathered on the coast."
+      },
+      "pinguineras-05": {
+        "name": "Adults and chicks",
+        "description": "Active colony with adult penguins and brown downy chicks."
+      },
+      "pinguineras-06": {
+        "name": "Colony by the stream",
+        "description": "Dozens of king penguins between the grass and the coastal stream."
+      },
+      "pinguineras-07": {
+        "name": "Sunrise in the colony",
+        "description": "Golden light on penguins and their chicks at dawn."
+      },
+      "pinguineras-08": {
+        "name": "Splash in the stream",
+        "description": "King penguin sliding on the water with flippers extended."
+      },
+      "pinguineras-09": {
+        "name": "Trio facing the colony",
+        "description": "Three king penguins with the colony on the hill behind."
+      },
+      "pinguineras-10": {
+        "name": "Reflection in the lagoon",
+        "description": "Colony reflected in a calm lagoon by the sea."
+      },
+      "pinguineras-11": {
+        "name": "Twilight in the reserve",
+        "description": "King penguin colony under a blue twilight sky."
+      },
+      "pinguineras-12": {
+        "name": "Water mirror",
+        "description": "Penguins reflected in a pond among green grass."
+      },
+      "pinguineras-13": {
+        "name": "Coastal panorama",
+        "description": "Wide view of the colony with a penguin by the water."
+      },
+      "pinguineras-14": {
+        "name": "Trio on the shore",
+        "description": "Three king penguins on the shore with mountains behind."
+      },
+      "pinguineras-15": {
+        "name": "Pair on the trail",
+        "description": "Two king penguins walking along the reserve trail."
+      },
+      "pinguineras-16": {
+        "name": "Observation in the reserve",
+        "description": "Visitor photographing king penguins in their natural habitat."
+      },
+      "pinguineras-17": {
+        "name": "Colony on the hill",
+        "description": "Trio of penguins with the colony gathered on the hill."
+      },
+      "pinguineras-18": {
+        "name": "Pair by the sea",
+        "description": "Two king penguins by the stream with a view of the ocean."
+      },
+      "pinguineras-19": {
+        "name": "Fuegian grassland",
+        "description": "King penguins among the grasslands of Tierra del Fuego."
+      },
+      "pinguineras-20": {
+        "name": "Penguins and colony",
+        "description": "Three penguins in the foreground with the colony on the hill."
+      },
+      "pinguineras-21": {
+        "name": "Trio on the bank",
+        "description": "Three king penguins gathered on the stream bank."
+      },
+      "pinguineras-22": {
+        "name": "Penguin colony view",
+        "description": "Panorama of the natural habitat with the colony behind."
+      },
+      "pinguineras-23": {
+        "name": "Penguins by the stream",
+        "description": "King penguins standing by the stream on the steppe."
+      },
+      "pinguineras-24": {
+        "name": "Patagonian steppe",
+        "description": "Three king penguins among the dry steppe grass."
+      },
+      "pinguineras-25": {
+        "name": "Group by the water",
+        "description": "Group of king penguins on the bank of a stream."
+      },
+      "pinguineras-26": {
+        "name": "Penguin greeting",
+        "description": "Two king penguins interacting on the grassland."
+      },
+      "pinguineras-27": {
+        "name": "Bahía Inútil grasslands",
+        "description": "King penguins in the reserve grasslands."
+      },
+      "pinguineras-28": {
+        "name": "Courtship in the colony",
+        "description": "King penguins in courtship display on the grass."
+      },
+      "pinguineras-29": {
+        "name": "Trio on the meadow",
+        "description": "Three king penguins on the meadow by the stream."
+      },
+      "pinguineras-30": {
+        "name": "King penguin detail",
+        "description": "Close-up of king penguins among tall grass."
+      },
+      "pinguineras-31": {
+        "name": "Stream bank",
+        "description": "King penguins on the coastal stream bank."
+      },
+      "pinguineras-32": {
+        "name": "Trio in the grass",
+        "description": "Three king penguins among the golden steppe grass."
+      },
+      "pinguineras-33": {
+        "name": "Companions on the steppe",
+        "description": "King penguins sharing the natural grassland."
+      },
+      "pinguineras-34": {
+        "name": "Steppe under clouds",
+        "description": "Three king penguins on the open steppe under cloudy skies."
+      },
+      "pinguineras-35": {
+        "name": "Penguins on the plain",
+        "description": "Pair of king penguins on the Patagonian plain."
+      },
+      "pinguineras-36": {
+        "name": "Group on the tundra",
+        "description": "Group of king penguins on the reserve tundra."
+      },
+      "pinguineras-37": {
+        "name": "Observation area",
+        "description": "King penguins near the reserve observation trail."
+      },
+      "pinguineras-38": {
+        "name": "Reserve trail",
+        "description": "King penguins walking along the colony trail."
+      },
+      "pinguineras-39": {
+        "name": "Observation experience",
+        "description": "Tourist watching king penguins from the marked trail."
+      },
+      "pinguineras-40": {
+        "name": "Colony and lagoon",
+        "description": "King penguin colony with reflections in the coastal lagoon."
+      },
+      "pinguineras-41": {
+        "name": "Pair in the reserve",
+        "description": "Two king penguins on the tundra near the trail."
+      },
+      "pinguineras-42": {
+        "name": "Colony landscape",
+        "description": "Full view of the colony with the sea and sky behind."
+      }
+    },
+    "outOfCity": {
+      "cerro-sombrero": {
+        "name": "Cerro Sombrero",
+        "description": "Authentic life on the Fuegian steppe."
+      },
+      "bahia-azul": {
+        "name": "Bahía Azul",
+        "description": "A serene bay in the heart of Tierra del Fuego."
+      },
+      "punta-delgada": {
+        "name": "Punta Delgada",
+        "description": "Wild coast of the Strait of Magellan."
+      },
+      "punta-arenas": {
+        "name": "Punta Arenas",
+        "description": "The capital of the Strait of Magellan."
+      },
+      "puerto-natales": {
+        "name": "Puerto Natales",
+        "description": "Gateway to Torres del Paine."
+      }
+    }
+  },
+  "gallery": {
+    "20250703_134145": "Visit to Selk'nam Square",
+    "20250804_125106": "Tourist group on the ferry boat",
+    "20250814_131642": "Black-necked swan sculpture",
+    "20250831_170439": "Lighthouse on the Tierra del Fuego coast",
+    "20251012_133122": "Moment with the black-necked swan",
+    "20251012_162532": "Encounter with king penguins",
+    "20251018_161517": "Group at Hain Viewpoint",
+    "20251018_164010": "Walk through Porvenir",
+    "20251020_105928": "Group at the Selk'nam Wiweinar monument",
+    "20251031_173457": "Selk'nam mural in Porvenir",
+    "20251101_112615": "Laguna de los Cisnes, stromatolites",
+    "20251106_123028": "Stromatolites, Laguna de los Cisnes",
+    "20251106_130744": "Hain Viewpoint with view of Porvenir",
+    "20251106_132814": "Selk'nam statues in the square",
+    "20251109_173236": "Porvenir sign, 128 years",
+    "20251119_114645": "Group at a Patagonian ranch",
+    "20251120_112053": "Hike to the stromatolites",
+    "20260627_004515": "Group at Porvenir commemorative frame",
+    "20260627_004516": "Group by the stromatolites"
+  }
+}
