@@ -8,6 +8,7 @@
     "en": "English"
   },
   "nav": {
+    "about": "Quiénes somos",
     "services": "Servicios",
     "tours": "Tours",
     "transport": "Transporte",
@@ -18,6 +19,11 @@
     "title": "Descubre <1>Porvenir, Tierra del Fuego</1>",
     "subtitle": "Vive una experiencia inolvidable en el fin del mundo con nuestros tours y servicios de transporte.",
     "cta": "Explora Rutas"
+  },
+  "about": {
+    "title": "Quiénes somos",
+    "lead": "Tänu nace en Porvenir para mostrar Tierra del Fuego con cercanía, seguridad y conocimiento local.",
+    "body": "Somos un equipo de la zona que organiza tours, traslados y experiencias a medida: desde el Parque Pingüino Rey y los estromatolitos hasta recorridos por la ciudad y viajes fuera de Porvenir. Queremos que cada visita se sienta auténtica, cómoda y bien acompañada."
   },
   "services": {
     "title": "Nuestros Servicios",
@@ -37,7 +43,9 @@
     "stromatolitesLine1": "Parque Estromatolitos,",
     "stromatolitesLine2": "Laguna de los Cisnes",
     "ferryLine1": "Barcaza",
-    "ferryLine2": "Traslado desde la llegada en ferry"
+    "ferryLine2": "Traslado desde la llegada en ferry",
+    "plazaLine1": "Plaza Selk'nam",
+    "plazaLine2": "Porvenir, Tierra del Fuego"
   },
   "transportSection": {
     "title": "Nuestros Servicios de Transporte",
@@ -63,7 +71,8 @@
     "email": "Email"
   },
   "footer": {
-    "copyright": "© {{year}} Tänu. Todos los derechos reservados."
+    "copyright": "© {{year}} Tänu. Todos los derechos reservados.",
+    "follow": "Síguenos"
   },
   "modal": {
     "close": "Cerrar",

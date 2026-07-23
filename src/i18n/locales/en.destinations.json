@@ -38,7 +38,7 @@
         "description": "The iconic lighthouse on the Fuegian coast."
       },
       "selknam": {
-        "name": "Selk'nam",
+        "name": "Plaza Selk'nam",
         "description": "Memory and legacy of the Selk'nam people."
       },
       "flamencos": {
@@ -46,11 +46,11 @@
         "description": "Patagonian birdlife in its natural habitat."
       },
       "plaza": {
-        "name": "Town Square",
+        "name": "Plaza Arturo Merino Benítez",
         "description": "The civic heart of Porvenir."
       },
       "plaza-vista": {
-        "name": "Square View",
+        "name": "Plaza Arturo Merino Benítez View",
         "description": "Community life in the town center."
       },
       "aeronave": {

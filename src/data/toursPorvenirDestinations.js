@@ -37,7 +37,7 @@ export const toursPorvenirDestinations = [
   },
   {
     id: 'selknam',
-    name: 'Selknam',
+    name: 'Plaza Selk\'nam',
     image: '/images/services/tours-porvenir/selknam.jpg',
     description: 'Memoria y legado del pueblo Selk\'nam.',
   },
@@ -49,13 +49,13 @@ export const toursPorvenirDestinations = [
   },
   {
     id: 'plaza',
-    name: 'Plaza',
+    name: 'Plaza Arturo Merino Benítez',
     image: '/images/services/tours-porvenir/plaza.jpg',
     description: 'El corazón cívico de Porvenir.',
   },
   {
     id: 'plaza-vista',
-    name: 'Vista Plaza',
+    name: 'Vista Plaza Arturo Merino Benítez',
     image: '/images/services/tours-porvenir/plaza_.jpg',
     description: 'Encuentro y vida local en el centro.',
   },

@@ -60,6 +60,7 @@ export default function SiteNavbar({ activePage = 'home' }) {
             <Nav.Item>{sectionLink('#tours', t('nav.tours'))}</Nav.Item>
             <Nav.Item>{sectionLink('#transporte', t('nav.transport'))}</Nav.Item>
             <Nav.Item>{sectionLink('#galeria', t('nav.gallery'))}</Nav.Item>
+            <Nav.Item>{sectionLink('#quienes-somos', t('nav.about'))}</Nav.Item>
             <Nav.Item>
               {isHome ? (
                 <Nav.Link as="a" href="#contacto" className="btn btn-outline-light rounded-pill">

@@ -149,12 +149,22 @@ export default function Home() {
           </div>
           <div className="tour-card">
             <TourVideo
-              poster="/images/gallery/momentos-inolvidables/20250804_125106.jpg"
+              poster="/images/services/tours-porvenir/barcaza.jpg"
               src="/videos/barcaza.mp4"
             />
             <h3 className="tour-title-museum">
               <span className="tour-title-name">{t('toursSection.ferryLine1')}</span>
               <span className="tour-title-name">{t('toursSection.ferryLine2')}</span>
+            </h3>
+          </div>
+          <div className="tour-card">
+            <TourVideo
+              poster="/images/services/tours-porvenir/plaza_selknam.jpg"
+              src="/videos/plaza_selknam.mp4"
+            />
+            <h3 className="tour-title-museum">
+              <span className="tour-title-name">{t('toursSection.plazaLine1')}</span>
+              <span className="tour-title-name">{t('toursSection.plazaLine2')}</span>
             </h3>
           </div>
         </div>
@@ -194,6 +204,24 @@ export default function Home() {
         <h2 className="section-title">{t('gallerySection.title')}</h2>
         <div className="gallery-album-container">
           <GalleryAlbum images={gallery} />
+        </div>
+      </section>
+
+      <section id="quienes-somos" className="section about-section">
+        <h2 className="section-title">{t('about.title')}</h2>
+        <div className="about-layout">
+          <div className="about-media">
+            <img
+              src="/images/logo/tanu-agencia.png"
+              alt="Tänu Agencia de Viaje y Turismo"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div className="about-copy">
+            <p className="about-lead">{t('about.lead')}</p>
+            <p>{t('about.body')}</p>
+          </div>
         </div>
       </section>
 
