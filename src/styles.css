@@ -30,6 +30,17 @@ body {
     text-align: center;
 }
 
+/* Below-the-fold sections: cheaper first paint */
+#servicios,
+#tours,
+#transporte,
+#galeria,
+#quienes-somos,
+#contacto {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 800px;
+}
+
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;

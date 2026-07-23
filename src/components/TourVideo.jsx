@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function PlayIcon() {
   return (
@@ -10,9 +10,29 @@ function PlayIcon() {
 }
 
 export default function TourVideo({ poster, src }) {
+  const containerRef = useRef(null);
   const videoRef = useRef(null);
   const [showOverlay, setShowOverlay] = useState(true);
   const [activated, setActivated] = useState(false);
+  const [posterSrc, setPosterSrc] = useState(undefined);
+
+  useEffect(() => {
+    const node = containerRef.current;
+    if (!node || !poster) return undefined;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setPosterSrc(poster);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '200px 0px' },
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [poster]);
 
   const handlePlay = () => setShowOverlay(false);
   const handlePause = () => setShowOverlay(true);
@@ -25,7 +45,6 @@ export default function TourVideo({ poster, src }) {
 
     if (!activated) {
       setActivated(true);
-      // Attach source on demand so the home page does not download every video.
       video.src = src;
       video.addEventListener(
         'loadeddata',
@@ -42,11 +61,11 @@ export default function TourVideo({ poster, src }) {
   };
 
   return (
-    <div className="video-container">
+    <div className="video-container" ref={containerRef}>
       <video
         ref={videoRef}
         className="tour-video"
-        poster={poster}
+        poster={posterSrc}
         controls
         preload="none"
         muted

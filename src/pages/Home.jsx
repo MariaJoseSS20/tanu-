@@ -17,6 +17,12 @@ import useLocalizedDestinations from '../hooks/useLocalizedDestinations.js';
 import useLocalizedGallery from '../hooks/useLocalizedGallery.js';
 import useWhatsAppMessages from '../hooks/useWhatsAppMessages.js';
 
+/** Use a lighter image for the first carousel slide on the home cards. */
+function withCardPreview(destinations, previewUrl) {
+  if (!previewUrl || destinations.length === 0) return destinations;
+  return destinations.map((item, index) => (index === 0 ? { ...item, image: previewUrl } : item));
+}
+
 export default function Home() {
   const location = useLocation();
   const { t } = useTranslation();
@@ -31,6 +37,11 @@ export default function Home() {
   const porvenir = useLocalizedDestinations(toursPorvenirDestinations, 'porvenir');
   const outOfCity = useLocalizedDestinations(outOfCityDestinations, 'outOfCity');
   const gallery = useLocalizedGallery(galleryImages);
+
+  const transportePreview = withCardPreview(transporte, '/images/services/previews/bus.jpg');
+  const pinguinerasPreview = withCardPreview(pinguineras, '/images/services/previews/pinguineras.jpg');
+  const porvenirPreview = withCardPreview(porvenir, '/images/services/previews/porvenir.jpg');
+  const outOfCityPreview = withCardPreview(outOfCity, '/images/services/previews/fuera.jpg');
 
   useEffect(() => {
     if (location.hash) {
@@ -62,7 +73,7 @@ export default function Home() {
         <h2 className="section-title">{t('services.title')}</h2>
         <div className="grid-container">
           <div className="service-card service-card--carousel">
-            <ServiceCarouselPreview destinations={transporte} showControls />
+            <ServiceCarouselPreview destinations={transportePreview} showControls />
             <h3>{t('services.transport')}</h3>
             <button
               type="button"
@@ -73,7 +84,7 @@ export default function Home() {
             </button>
           </div>
           <div className="service-card service-card--carousel">
-            <ServiceCarouselPreview destinations={pinguineras} hideCaptions showControls />
+            <ServiceCarouselPreview destinations={pinguinerasPreview} hideCaptions showControls />
             <h3>{t('services.pinguineras')}</h3>
             <button
               type="button"
@@ -84,7 +95,7 @@ export default function Home() {
             </button>
           </div>
           <div className="service-card service-card--carousel">
-            <ServiceCarouselPreview destinations={porvenir} showControls />
+            <ServiceCarouselPreview destinations={porvenirPreview} showControls />
             <h3>{t('services.porvenir')}</h3>
             <button
               type="button"
@@ -95,7 +106,7 @@ export default function Home() {
             </button>
           </div>
           <div className="service-card service-card--carousel">
-            <ServiceCarouselPreview destinations={outOfCity} showControls />
+            <ServiceCarouselPreview destinations={outOfCityPreview} showControls />
             <h3>{t('services.outOfCity')}</h3>
             <button
               type="button"
