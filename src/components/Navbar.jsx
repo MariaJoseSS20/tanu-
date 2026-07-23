@@ -51,7 +51,7 @@ export default function SiteNavbar({ activePage = 'home' }) {
     <Navbar expand="lg" className={navClassName} data-bs-theme={scrolled ? 'light' : 'dark'}>
       <Container fluid>
         <Navbar.Brand as={Link} to="/">
-          <img src="/images/logo/tanu.png" alt="Tänu" height="60" />
+          <img src="/images/logo/tanu.png" alt="Tänu" height="60" width="90" decoding="async" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNav" className="border-0" />
         <Navbar.Collapse id="navbarNav" className="justify-content-end">

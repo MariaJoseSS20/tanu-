@@ -65,11 +65,9 @@ body {
 
 .hero {
     /* Hacemos la capa oscura más fuerte (0.65 a 0.8) para mejorar el contraste del texto */
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/images/gallery/IMG_3728.png'); 
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/images/gallery/IMG_3728.jpg');
     background-size: cover;
     background-position: center;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
     height: 100vh;
     color: #ffffff; /* Blanco puro para mejor contraste */
     display: flex;

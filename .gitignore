@@ -4,3 +4,6 @@ dist
 .venv
 .vercel
 /videos/
+videos-original-backup/
+images-original-backup/
+backups/

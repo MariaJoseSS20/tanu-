@@ -1,9 +1,15 @@
 const base = '/images/gallery/momentos-inolvidables';
+const thumbs = `${base}/thumbs`;
 
 function photo(file, alt) {
-  const src = `${base}/${file}`;
   const id = file.replace(/\.[^.]+$/, '');
-  return { id, thumb: src, full: src, alt };
+  const ext = file.includes('.') ? file.slice(file.lastIndexOf('.')) : '.jpg';
+  return {
+    id,
+    thumb: `${thumbs}/${id}.jpg`,
+    full: `${base}/${id}${ext}`,
+    alt,
+  };
 }
 
 export const galleryImages = [

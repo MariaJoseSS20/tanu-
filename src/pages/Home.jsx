@@ -139,7 +139,7 @@ export default function Home() {
           </div>
           <div className="tour-card">
             <TourVideo
-              poster="/images/services/tours-porvenir/entrada_estromatolitos.png"
+              poster="/images/services/tours-porvenir/entrada_estromatolitos.jpg"
               src="/videos/estromatolitos.mp4"
             />
             <h3 className="tour-title-museum">

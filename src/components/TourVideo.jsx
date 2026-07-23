@@ -12,6 +12,7 @@ function PlayIcon() {
 export default function TourVideo({ poster, src }) {
   const videoRef = useRef(null);
   const [showOverlay, setShowOverlay] = useState(true);
+  const [activated, setActivated] = useState(false);
 
   const handlePlay = () => setShowOverlay(false);
   const handlePause = () => setShowOverlay(true);
@@ -19,7 +20,25 @@ export default function TourVideo({ poster, src }) {
 
   const handleOverlayClick = (event) => {
     event.stopPropagation();
-    videoRef.current?.play();
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (!activated) {
+      setActivated(true);
+      // Attach source on demand so the home page does not download every video.
+      video.src = src;
+      video.addEventListener(
+        'loadeddata',
+        () => {
+          video.play().catch(() => {});
+        },
+        { once: true },
+      );
+      video.load();
+      return;
+    }
+
+    video.play().catch(() => {});
   };
 
   return (
@@ -29,13 +48,13 @@ export default function TourVideo({ poster, src }) {
         className="tour-video"
         poster={poster}
         controls
-        preload="metadata"
+        preload="none"
         muted
+        playsInline
         onPlay={handlePlay}
         onPause={handlePause}
         onEnded={handleEnded}
       >
-        {src && <source src={src} type="video/mp4" />}
         Tu navegador no soporta el elemento de video.
       </video>
       {showOverlay && (

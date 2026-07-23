@@ -3,10 +3,6 @@
     overflow: hidden;
 }
 
-.service-carousel-preload {
-    display: none;
-}
-
 .service-preview-carousel {
     height: 200px;
 }

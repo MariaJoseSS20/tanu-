@@ -1,0 +1,9 @@
+/videos/
+/videos-original-backup/
+/images/
+/legacy/
+.venv/
+dist/
+node_modules/
+/images-original-backup/
+/backups/
