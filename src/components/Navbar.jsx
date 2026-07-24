@@ -53,7 +53,12 @@ export default function SiteNavbar({ activePage = 'home' }) {
         <Navbar.Brand as={Link} to="/">
           <img src="/images/logo/tanu.png" alt="Tänu" height="60" width="90" decoding="async" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarNav" className="border-0" />
+
+        <div className="navbar-mobile-tools d-flex d-lg-none align-items-center ms-auto gap-2">
+          <LanguageSwitcher scrolled={scrolled} showLabels />
+          <Navbar.Toggle aria-controls="navbarNav" className="border-0" />
+        </div>
+
         <Navbar.Collapse id="navbarNav" className="justify-content-end">
           <Nav className="gap-3 align-items-lg-center">
             <Nav.Item>{sectionLink('#servicios', t('nav.services'))}</Nav.Item>
@@ -61,19 +66,9 @@ export default function SiteNavbar({ activePage = 'home' }) {
             <Nav.Item>{sectionLink('#transporte', t('nav.transport'))}</Nav.Item>
             <Nav.Item>{sectionLink('#galeria', t('nav.gallery'))}</Nav.Item>
             <Nav.Item>{sectionLink('#quienes-somos', t('nav.about'))}</Nav.Item>
-            <Nav.Item>
-              {isHome ? (
-                <Nav.Link as="a" href="#contacto" className="btn btn-outline-light rounded-pill">
-                  {t('nav.contact')}
-                </Nav.Link>
-              ) : (
-                <Nav.Link as={Link} to="/#contacto" className="btn btn-outline-light rounded-pill">
-                  {t('nav.contact')}
-                </Nav.Link>
-              )}
-            </Nav.Item>
-            <Nav.Item>
-              <LanguageSwitcher scrolled={scrolled} />
+            <Nav.Item>{sectionLink('#contacto', t('nav.contact'))}</Nav.Item>
+            <Nav.Item className="d-none d-lg-block">
+              <LanguageSwitcher scrolled={scrolled} showLabels />
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

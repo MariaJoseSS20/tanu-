@@ -52,7 +52,7 @@ function UsFlagIcon() {
   );
 }
 
-export default function LanguageSwitcher({ scrolled = false }) {
+export default function LanguageSwitcher({ scrolled = false, showLabels = false }) {
   const { i18n, t } = useTranslation();
   const current = i18n.language?.startsWith('en') ? 'en' : 'es';
 
@@ -62,7 +62,7 @@ export default function LanguageSwitcher({ scrolled = false }) {
 
   return (
     <div
-      className={`language-switcher${scrolled ? ' language-switcher--light' : ''}`}
+      className={`language-switcher${scrolled ? ' language-switcher--light' : ''}${showLabels ? ' language-switcher--labels' : ''}`}
       role="group"
       aria-label={t('language.label')}
     >
@@ -75,6 +75,7 @@ export default function LanguageSwitcher({ scrolled = false }) {
         title={t('language.es')}
       >
         <ChileFlagIcon />
+        {showLabels && <span className="language-switcher__code">ES</span>}
       </button>
       <button
         type="button"
@@ -85,6 +86,7 @@ export default function LanguageSwitcher({ scrolled = false }) {
         title={t('language.en')}
       >
         <UsFlagIcon />
+        {showLabels && <span className="language-switcher__code">EN</span>}
       </button>
     </div>
   );
