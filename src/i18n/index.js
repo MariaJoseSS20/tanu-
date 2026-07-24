@@ -22,7 +22,9 @@ i18n
     supportedLngs: ['es', 'en'],
     interpolation: { escapeValue: false },
     detection: {
-      order: ['localStorage', 'navigator'],
+      // Solo idioma elegido a mano (localStorage). Sin navigator:
+      // Google y la 1.ª visita quedan en español (fallbackLng).
+      order: ['localStorage'],
       caches: ['localStorage'],
       lookupLocalStorage: 'tanu-language',
     },
