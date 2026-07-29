@@ -8,6 +8,7 @@ export default function ServiceCarouselPreview({
   hideCaptions = false,
   showControls = false,
   maxSlides = DEFAULT_MAX_SLIDES,
+  imageFit = 'cover',
 }) {
   const slides = destinations.slice(0, maxSlides);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -19,6 +20,9 @@ export default function ServiceCarouselPreview({
     return false;
   };
 
+  const fitClass =
+    imageFit === 'contain' ? 'service-preview-carousel--contain' : '';
+
   return (
     <Carousel
       activeIndex={activeIndex}
@@ -27,7 +31,7 @@ export default function ServiceCarouselPreview({
       controls={showControls}
       indicators
       pause="hover"
-      className="service-preview-carousel"
+      className={`service-preview-carousel ${fitClass}`.trim()}
       touch
     >
       {slides.map((destination, index) => (

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Descubre Porvenir, Tierra del Fuego - Transporte y turismo"
+    "title": "Tänu | Agencia de Viajes y Turismo en Porvenir"
   },
   "language": {
     "label": "Idioma",
@@ -22,8 +22,11 @@
   },
   "about": {
     "title": "Quiénes somos",
-    "lead": "Tänu nace en Porvenir para mostrar Tierra del Fuego con cercanía, seguridad y conocimiento local.",
-    "body": "Somos un equipo de la zona que organiza tours, traslados y experiencias a medida: desde el Parque Pingüino Rey y los estromatolitos hasta recorridos por la ciudad y viajes fuera de Porvenir. Queremos que cada visita se sienta auténtica, cómoda y bien acompañada."
+    "lead": "Agencia de Viajes, Transporte y Turismo \"TÄNU\".",
+    "p1": "Somos una empresa de Porvenir, Tierra del Fuego, dedicada a ofrecer servicios de turismo y transporte con un fuerte compromiso por la calidad, la seguridad y la atención personalizada.",
+    "p2": "Nuestra misión es acercar a visitantes y residentes a los paisajes, la cultura y la historia de Tierra del Fuego mediante experiencias auténticas y un servicio confiable. Realizamos city tours por Porvenir, recorridos al interior de la isla y sus alrededores, además de servicios de traslado para particulares, empresas e instituciones, adaptándonos a las necesidades de cada cliente.",
+    "p3": "Nos caracterizamos por nuestra puntualidad, responsabilidad y trato cercano, trabajando cada día para que cada viaje sea cómodo, seguro y memorable.",
+    "p4": "En TÄNU creemos que cada recorrido es una oportunidad para descubrir la belleza del fin del mundo. Por eso, te invitamos a confiar en nosotros y vivir una experiencia de viaje con el respaldo de un equipo comprometido con la excelencia y la hospitalidad fueguina."
   },
   "services": {
     "title": "Nuestros Servicios",
@@ -53,6 +56,8 @@
     "privateDesc": "Vehículos cómodos para tus traslados.",
     "sharedTitle": "Transporte Compartido",
     "sharedDesc": "Una opción económica y segura para moverte por la ciudad.",
+    "corporateTitle": "Transporte para empresas",
+    "corporateDesc": "Traslados de personal, visitas y operaciones a medida para tu empresa.",
     "book": "Reservar"
   },
   "gallerySection": {

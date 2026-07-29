@@ -1,5 +1,23 @@
 export const outOfCityDestinations = [
   {
+    id: 'mapa-patagonia',
+    name: 'Rutas',
+    image: '/images/services/viajes-fuera-ciudad/mapa_patagonia.jpg',
+    description: 'Rutas por Patagonia y Tierra del Fuego: Porvenir, Punta Arenas y más.',
+  },
+  {
+    id: 'entrada-cerro-sombrero',
+    name: 'Entrada a Cerro Sombrero',
+    image: '/images/services/viajes-fuera-ciudad/entrada_cerro_sombrero.jpg',
+    description: 'Letrero de bienvenida a la comuna de Primavera, Tierra del Fuego.',
+  },
+  {
+    id: 'plaza-monumento-cerro-sombrero',
+    name: 'Plaza del monumento',
+    image: '/images/services/viajes-fuera-ciudad/plaza_monumento_cerro_sombrero.jpg',
+    description: 'Monumento al trabajador del petróleo en Cerro Sombrero.',
+  },
+  {
     id: 'cerro-sombrero',
     name: 'Cerro Sombrero',
     image: '/images/services/viajes-fuera-ciudad/cerro_sombrero.jpg',

@@ -32,4 +32,5 @@ export const galleryImages = [
   photo('20251120_112053.jpg', 'Caminata hacia los estromatolitos'),
   photo('20260627_004515.jpeg', 'Grupo en marco conmemorativo de Porvenir'),
   photo('20260627_004516.jpeg', 'Grupo junto a los estromatolitos'),
+  photo('20260723_225848.jpg', 'Guanacos en la estepa de Tierra del Fuego'),
 ];

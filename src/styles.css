@@ -494,6 +494,9 @@ body {
 }
 
 .transport-option {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: var(--secondary-color);
     border-radius: 10px;
     padding: 2rem;
@@ -512,7 +515,13 @@ body {
 }
 
 .transport-option p {
+    flex: 1;
     margin-bottom: 1.5rem;
+}
+
+.transport-option .cta-button {
+    margin-top: auto;
+    align-self: center;
 }
 
 
@@ -987,17 +996,39 @@ body {
     line-height: 1.45;
 }
 
-.about-copy p:last-child {
+.about-copy p {
     font-size: 1.05rem;
     font-weight: 300;
     color: #4b5563;
-    margin: 0;
+    margin: 0 0 1rem;
+    line-height: 1.65;
+    text-align: justify;
+}
+
+.about-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.about-copy .about-lead {
+    font-weight: 600;
+    color: var(--text-dark);
 }
 
 @media (max-width: 768px) {
     .about-layout {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .about-media {
+        text-align: center;
+    }
+
+    .about-copy p {
+        text-align: justify;
+    }
+
+    .about-copy .about-lead {
         text-align: center;
     }
 

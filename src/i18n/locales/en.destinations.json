@@ -241,6 +241,18 @@
       }
     },
     "outOfCity": {
+      "mapa-patagonia": {
+        "name": "Routes",
+        "description": "Routes across Patagonia and Tierra del Fuego: Porvenir, Punta Arenas, and more."
+      },
+      "entrada-cerro-sombrero": {
+        "name": "Welcome to Cerro Sombrero",
+        "description": "Welcome sign to Primavera commune, Tierra del Fuego."
+      },
+      "plaza-monumento-cerro-sombrero": {
+        "name": "Monument plaza",
+        "description": "Monument to the oil worker in Cerro Sombrero."
+      },
       "cerro-sombrero": {
         "name": "Cerro Sombrero",
         "description": "Authentic life on the Fuegian steppe."
@@ -282,6 +294,7 @@
     "20251119_114645": "Group at a Patagonian ranch",
     "20251120_112053": "Hike to the stromatolites",
     "20260627_004515": "Group at Porvenir commemorative frame",
-    "20260627_004516": "Group by the stromatolites"
+    "20260627_004516": "Group by the stromatolites",
+    "20260723_225848": "Guanacos on the Tierra del Fuego steppe"
   }
 }

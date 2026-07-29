@@ -69,6 +69,48 @@ export default function Home() {
         </div>
       </header>
 
+      <section id="transporte" className="section">
+        <h2 className="section-title">{t('transportSection.title')}</h2>
+        <div className="transport-container">
+          <div className="transport-option">
+            <h3>{t('transportSection.sharedTitle')}</h3>
+            <p>{t('transportSection.sharedDesc')}</p>
+            <a
+              href={whatsApp.whatsAppUrl(whatsApp.reserveMessage(t('transportSection.sharedTitle')))}
+              className="cta-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t('transportSection.book')}
+            </a>
+          </div>
+          <div className="transport-option">
+            <h3>{t('transportSection.privateTitle')}</h3>
+            <p>{t('transportSection.privateDesc')}</p>
+            <a
+              href={whatsApp.whatsAppUrl(whatsApp.reserveMessage(t('transportSection.privateTitle')))}
+              className="cta-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t('transportSection.book')}
+            </a>
+          </div>
+          <div className="transport-option">
+            <h3>{t('transportSection.corporateTitle')}</h3>
+            <p>{t('transportSection.corporateDesc')}</p>
+            <a
+              href={whatsApp.whatsAppUrl(whatsApp.reserveMessage(t('transportSection.corporateTitle')))}
+              className="cta-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t('transportSection.book')}
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="servicios" className="section">
         <h2 className="section-title">{t('services.title')}</h2>
         <div className="grid-container">
@@ -106,7 +148,7 @@ export default function Home() {
             </button>
           </div>
           <div className="service-card service-card--carousel">
-            <ServiceCarouselPreview destinations={outOfCityPreview} showControls />
+            <ServiceCarouselPreview destinations={outOfCityPreview} showControls maxSlides={8} />
             <h3>{t('services.outOfCity')}</h3>
             <button
               type="button"
@@ -181,36 +223,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="transporte" className="section">
-        <h2 className="section-title">{t('transportSection.title')}</h2>
-        <div className="transport-container">
-          <div className="transport-option">
-            <h3>{t('transportSection.privateTitle')}</h3>
-            <p>{t('transportSection.privateDesc')}</p>
-            <a
-              href={whatsApp.whatsAppUrl(whatsApp.reserveMessage(t('transportSection.privateTitle')))}
-              className="cta-button"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('transportSection.book')}
-            </a>
-          </div>
-          <div className="transport-option">
-            <h3>{t('transportSection.sharedTitle')}</h3>
-            <p>{t('transportSection.sharedDesc')}</p>
-            <a
-              href={whatsApp.whatsAppUrl(whatsApp.reserveMessage(t('transportSection.sharedTitle')))}
-              className="cta-button"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('transportSection.book')}
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section id="galeria" className="section">
         <h2 className="section-title">{t('gallerySection.title')}</h2>
         <div className="gallery-album-container">
@@ -224,14 +236,17 @@ export default function Home() {
           <div className="about-media">
             <img
               src="/images/logo/tanu-agencia.png"
-              alt="Tänu Agencia de Viaje y Turismo"
+              alt="Tänu | Agencia de Viajes y Turismo en Porvenir"
               loading="lazy"
               decoding="async"
             />
           </div>
           <div className="about-copy">
             <p className="about-lead">{t('about.lead')}</p>
-            <p>{t('about.body')}</p>
+            <p>{t('about.p1')}</p>
+            <p>{t('about.p2')}</p>
+            <p>{t('about.p3')}</p>
+            <p>{t('about.p4')}</p>
           </div>
         </div>
       </section>

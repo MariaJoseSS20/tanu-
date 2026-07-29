@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Discover Porvenir, Tierra del Fuego - Transport and tourism"
+    "title": "Tänu | Travel and Tourism Agency in Porvenir"
   },
   "language": {
     "label": "Language",
@@ -22,8 +22,11 @@
   },
   "about": {
     "title": "About us",
-    "lead": "Tänu was born in Porvenir to share Tierra del Fuego with local care, safety, and know-how.",
-    "body": "We are a local team that organizes tours, transfers, and tailor-made experiences—from King Penguin Park and the stromatolites to city walks and trips beyond Porvenir. We want every visit to feel authentic, comfortable, and well guided."
+    "lead": "Travel, Transport and Tourism Agency \"TÄNU\".",
+    "p1": "We are a company based in Porvenir, Tierra del Fuego, dedicated to tourism and transport services with a strong commitment to quality, safety, and personalized attention.",
+    "p2": "Our mission is to bring visitors and residents closer to the landscapes, culture, and history of Tierra del Fuego through authentic experiences and reliable service. We offer city tours in Porvenir, trips inland and around the island, plus transfers for individuals, companies, and institutions, tailored to each client's needs.",
+    "p3": "We are known for punctuality, responsibility, and a warm approach, working every day so that every trip is comfortable, safe, and memorable.",
+    "p4": "At TÄNU we believe every journey is a chance to discover the beauty of the end of the world. We invite you to trust us and enjoy a travel experience backed by a team committed to excellence and Fuegian hospitality."
   },
   "services": {
     "title": "Our Services",
@@ -53,6 +56,8 @@
     "privateDesc": "Comfortable vehicles for your transfers.",
     "sharedTitle": "Shared Transport",
     "sharedDesc": "An affordable and safe option to get around the city.",
+    "corporateTitle": "Corporate transport",
+    "corporateDesc": "Staff transfers, visits, and tailored operations for your company.",
     "book": "Book"
   },
   "gallerySection": {
