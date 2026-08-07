@@ -816,6 +816,46 @@ body {
     opacity: 0.9;
 }
 
+.footer-sernatur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 1.75rem;
+    flex-wrap: wrap;
+}
+
+.footer-sernatur__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.footer-sernatur__link:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+.footer-sernatur__seal {
+    display: block;
+    width: 108px;
+    height: auto;
+}
+
+.footer-sernatur__link--qr {
+    padding: 0.45rem;
+    background: #fff;
+    border-radius: 0.4rem;
+}
+
+.footer-sernatur__qr {
+    display: block;
+    width: 88px;
+    height: 88px;
+}
+
 .social-links {
     display: flex;
     justify-content: center;

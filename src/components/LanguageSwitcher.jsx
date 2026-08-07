@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 function ChileFlagIcon() {
   return (
     <svg viewBox="0 0 24 16" aria-hidden="true" focusable="false" className="language-switcher__flag">
-      <rect width="24" height="8" fill="#D52B1E" />
-      <rect y="8" width="24" height="8" fill="#FFFFFF" />
+      <rect width="24" height="8" fill="#FFFFFF" />
+      <rect y="8" width="24" height="8" fill="#D52B1E" />
       <rect width="8" height="8" fill="#0039A6" />
       <polygon
         fill="#FFFFFF"

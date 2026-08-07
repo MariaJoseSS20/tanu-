@@ -45,6 +45,8 @@ function FacebookIcon() {
   );
 }
 
+const SERNATUR_URL = 'https://serviciosturisticos.sernatur.cl/77660-turismo-tanu98538';
+
 export default function Footer() {
   const { t } = useTranslation();
 
@@ -77,6 +79,46 @@ export default function Footer() {
           <FacebookIcon />
         </a>
       </div>
+
+      <div className="footer-sernatur">
+        <a
+          href={SERNATUR_URL}
+          className="footer-sernatur__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={t('footer.sernaturSeal')}
+          title={t('footer.sernaturSeal')}
+        >
+          <img
+            src="/images/sernatur/sello-r.png"
+            alt={t('footer.sernaturSeal')}
+            className="footer-sernatur__seal"
+            width="120"
+            height="150"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+        <a
+          href={SERNATUR_URL}
+          className="footer-sernatur__link footer-sernatur__link--qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={t('footer.sernaturQr')}
+          title={t('footer.sernaturQr')}
+        >
+          <img
+            src="/images/sernatur/qr-codigo.png"
+            alt={t('footer.sernaturQr')}
+            className="footer-sernatur__qr"
+            width="96"
+            height="96"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+      </div>
+
       <p className="footer-copyright">{t('footer.copyright', { year: new Date().getFullYear() })}</p>
     </footer>
   );

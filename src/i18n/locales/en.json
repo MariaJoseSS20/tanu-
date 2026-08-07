@@ -77,7 +77,9 @@
   },
   "footer": {
     "copyright": "© {{year}} Tänu. All rights reserved.",
-    "follow": "Follow us"
+    "follow": "Follow us",
+    "sernaturSeal": "Tourism service registered with SERNATUR — verify registration",
+    "sernaturQr": "SERNATUR registration QR code — verify registration"
   },
   "modal": {
     "close": "Close",
