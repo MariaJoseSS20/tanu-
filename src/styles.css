@@ -914,6 +914,12 @@ body {
     font-size: 0.98rem;
 }
 
+.reviews-widget {
+    max-width: 960px;
+    margin: 0 auto 1.75rem;
+    min-height: 120px;
+}
+
 .reviews-actions {
     display: flex;
     flex-wrap: wrap;
