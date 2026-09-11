@@ -8,6 +8,15 @@ import {
 
 const TRUSTINDEX_SCRIPT_SRC = `https://cdn.trustindex.io/loader.js?${TRUSTINDEX_WIDGET_ID}`;
 
+function isTrustindexNode(node) {
+  if (!(node instanceof Element)) return false;
+  const className = typeof node.className === 'string' ? node.className : '';
+  if (className.includes('ti-widget') || className.includes('ti-reviews')) return true;
+  if (node.id?.includes('ti-')) return true;
+  if (node.matches?.('iframe[src*="trustindex"]')) return true;
+  return false;
+}
+
 export default function ReviewsSection() {
   const { t } = useTranslation();
   const widgetRef = useRef(null);
@@ -16,20 +25,37 @@ export default function ReviewsSection() {
     const container = widgetRef.current;
     if (!container) return undefined;
 
-    // Quitar scripts viejos pegados al body (quedaban junto al footer)
+    const relocateWidgets = () => {
+      document.querySelectorAll('[class*="ti-widget"], [class*="ti-reviews"], iframe[src*="trustindex"]').forEach((node) => {
+        if (isTrustindexNode(node) && !container.contains(node)) {
+          container.appendChild(node);
+        }
+      });
+    };
+
     document.querySelectorAll(`script[src*="cdn.trustindex.io/loader.js"]`).forEach((node) => {
       if (!container.contains(node)) node.remove();
     });
 
-    if (container.querySelector('script[data-tanu-trustindex]')) return undefined;
+    if (!container.querySelector('script[data-tanu-trustindex]')) {
+      const script = document.createElement('script');
+      script.src = TRUSTINDEX_SCRIPT_SRC;
+      script.dataset.tanuTrustindex = '1';
+      script.async = false;
+      script.onload = relocateWidgets;
+      container.appendChild(script);
+    }
 
-    const script = document.createElement('script');
-    script.src = TRUSTINDEX_SCRIPT_SRC;
-    script.dataset.tanuTrustindex = '1';
-    // Sin async: Trustindex usa document.currentScript para insertar el widget al lado del script
-    container.appendChild(script);
+    relocateWidgets();
+    const observer = new MutationObserver(relocateWidgets);
+    observer.observe(document.body, { childList: true, subtree: true });
 
-    return undefined;
+    const timeoutId = window.setTimeout(relocateWidgets, 1500);
+
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(timeoutId);
+    };
   }, []);
 
   return (
