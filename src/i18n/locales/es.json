@@ -85,7 +85,8 @@
     "sending": "Enviando…",
     "success": "¡Gracias! Recibimos tu comentario.",
     "error": "No se pudo enviar. Intenta de nuevo o escríbenos por WhatsApp.",
-    "validationRequired": "Completa nombre, servicio, calificación y comentario.",
+    "validationRequired": "Completa nombre, servicio, calificación y comentario para enviar.",
+    "ratingHint": "Elige una calificación con estrellas.",
     "emailSubject": "Nueva opinión desde turismotanu.cl",
     "previewHint": "Vista previa: sin Formspree configurado, el envío abre tu correo hacia {{email}}.",
     "services": {

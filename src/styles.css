@@ -1010,6 +1010,19 @@ body {
     color: var(--primary-color);
 }
 
+.reviews-rating-hint {
+    margin: 0.35rem 0 0;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.reviews-btn--submit:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
+
 .reviews-honeypot {
     position: absolute;
     left: -10000px;

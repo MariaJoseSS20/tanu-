@@ -18,32 +18,47 @@ function Stars({ value }) {
   );
 }
 
+const emptyForm = {
+  name: '',
+  email: '',
+  service: '',
+  message: '',
+};
+
 export default function ReviewsSection() {
   const { t } = useTranslation();
   const [showForm, setShowForm] = useState(false);
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
   const [rating, setRating] = useState(0);
+  const [fields, setFields] = useState(emptyForm);
   const [validationError, setValidationError] = useState('');
+
+  const canSubmit =
+    fields.name.trim().length > 0 &&
+    fields.service.trim().length > 0 &&
+    rating >= 1 &&
+    fields.message.trim().length > 0;
+
+  const updateField = (key) => (event) => {
+    setFields((prev) => ({ ...prev, [key]: event.target.value }));
+    setValidationError('');
+    if (status === 'success' || status === 'error') setStatus('idle');
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     setValidationError('');
 
-    const form = event.currentTarget;
-    const data = new FormData(form);
-    const name = String(data.get('name') || '').trim();
-    const service = String(data.get('service') || '').trim();
-    const message = String(data.get('message') || '').trim();
-
-    if (!name || !service || !rating || !message) {
+    if (!canSubmit) {
       setValidationError(t('reviews.validationRequired'));
-      setStatus('idle');
       return;
     }
 
-    data.set('name', name);
-    data.set('service', service);
-    data.set('message', message);
+    const data = new FormData();
+    data.set('name', fields.name.trim());
+    data.set('email', fields.email.trim());
+    data.set('service', fields.service.trim());
+    data.set('message', fields.message.trim());
     data.set('rating', String(rating));
     data.set('_subject', t('reviews.emailSubject'));
 
@@ -58,7 +73,7 @@ export default function ReviewsSection() {
       if (!response.ok) throw new Error('formspree_error');
 
       setStatus('success');
-      form.reset();
+      setFields(emptyForm);
       setRating(0);
     } catch {
       setStatus('error');
@@ -112,27 +127,42 @@ export default function ReviewsSection() {
       </div>
 
       {showForm && (
-        <form
-          className="reviews-form"
-          action={FORMSPREE_ENDPOINT}
-          method="POST"
-          onSubmit={handleSubmit}
-        >
+        <form className="reviews-form" onSubmit={handleSubmit} noValidate>
           <p className="reviews-form-note">{t('reviews.formNote')}</p>
 
           <label className="reviews-field">
             <span>{t('reviews.name')} *</span>
-            <input name="name" type="text" required autoComplete="name" maxLength={80} />
+            <input
+              name="name"
+              type="text"
+              required
+              autoComplete="name"
+              maxLength={80}
+              value={fields.name}
+              onChange={updateField('name')}
+            />
           </label>
 
           <label className="reviews-field">
             <span>{t('reviews.email')}</span>
-            <input name="email" type="email" autoComplete="email" maxLength={120} />
+            <input
+              name="email"
+              type="email"
+              autoComplete="email"
+              maxLength={120}
+              value={fields.email}
+              onChange={updateField('email')}
+            />
           </label>
 
           <label className="reviews-field">
             <span>{t('reviews.service')} *</span>
-            <select name="service" defaultValue="" required>
+            <select
+              name="service"
+              required
+              value={fields.service}
+              onChange={updateField('service')}
+            >
               <option value="" disabled>
                 {t('reviews.servicePlaceholder')}
               </option>
@@ -146,8 +176,7 @@ export default function ReviewsSection() {
 
           <fieldset className="reviews-field reviews-rating">
             <legend>{t('reviews.rating')} *</legend>
-            <input type="hidden" name="rating" value={rating || ''} />
-            <div className="reviews-rating__options">
+            <div className="reviews-rating__options" role="group" aria-label={t('reviews.rating')}>
               {[5, 4, 3, 2, 1].map((value) => (
                 <button
                   key={value}
@@ -156,6 +185,7 @@ export default function ReviewsSection() {
                   onClick={() => {
                     setRating(value);
                     setValidationError('');
+                    if (status === 'success' || status === 'error') setStatus('idle');
                   }}
                   aria-pressed={rating === value}
                   aria-label={t('reviews.ratingValue', { count: value })}
@@ -164,20 +194,34 @@ export default function ReviewsSection() {
                 </button>
               ))}
             </div>
+            {rating < 1 && (
+              <p className="reviews-rating-hint">{t('reviews.ratingHint')}</p>
+            )}
           </fieldset>
 
           <label className="reviews-field">
             <span>{t('reviews.message')} *</span>
-            <textarea name="message" required rows={4} maxLength={800} />
+            <textarea
+              name="message"
+              required
+              rows={4}
+              maxLength={800}
+              value={fields.message}
+              onChange={updateField('message')}
+            />
           </label>
 
-          <input type="hidden" name="_subject" value={t('reviews.emailSubject')} />
-          <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className="reviews-honeypot" aria-hidden="true" />
-
-          <button type="submit" className="reviews-btn reviews-btn--submit" disabled={status === 'sending'}>
+          <button
+            type="submit"
+            className="reviews-btn reviews-btn--submit"
+            disabled={!canSubmit || status === 'sending'}
+          >
             {status === 'sending' ? t('reviews.sending') : t('reviews.submit')}
           </button>
 
+          {!canSubmit && (
+            <p className="reviews-feedback reviews-feedback--err">{t('reviews.validationRequired')}</p>
+          )}
           {validationError && <p className="reviews-feedback reviews-feedback--err">{validationError}</p>}
           {status === 'success' && <p className="reviews-feedback reviews-feedback--ok">{t('reviews.success')}</p>}
           {status === 'error' && <p className="reviews-feedback reviews-feedback--err">{t('reviews.error')}</p>}
