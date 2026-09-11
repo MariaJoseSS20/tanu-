@@ -814,20 +814,6 @@ body {
     opacity: 0.9;
 }
 
-.reviews-list {
-    list-style: none;
-    max-width: 48rem;
-    margin: 0 auto 2rem;
-    padding: 0;
-    display: grid;
-    gap: 1.25rem;
-    text-align: left;
-}
-
-.reviews-item {
-    padding: 0 0.25rem;
-}
-
 .reviews-stars {
     color: var(--primary-color);
     letter-spacing: 0.08em;
@@ -838,25 +824,87 @@ body {
     opacity: 0.25;
 }
 
-.reviews-quote {
-    margin: 0.35rem 0 0;
-    border: none;
+.reviews-list {
+    list-style: none;
+    max-width: 52rem;
+    margin: 0 auto 1.25rem;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    text-align: left;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-.reviews-quote p {
+.reviews-card {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 0.5rem;
+    padding: 1.15rem 1.2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.reviews-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.55rem;
+}
+
+.reviews-card__source {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #6b7280;
+}
+
+.reviews-card__text {
     margin: 0;
-    font-size: 1.05rem;
+    font-size: 1.02rem;
     line-height: 1.55;
+    color: var(--text-dark);
 }
 
-.reviews-quote footer {
-    margin-top: 0.45rem;
+.reviews-card__author {
+    margin: 0.7rem 0 0;
     font-size: 0.92rem;
     color: #4b5563;
 }
 
-.reviews-service {
-    opacity: 0.85;
+.reviews-stars--lg {
+    font-size: 1.75rem;
+    letter-spacing: 0.12em;
+}
+
+.reviews-placeholder {
+    max-width: 28rem;
+    margin: 0 auto 1.75rem;
+    padding: 1.5rem 1rem;
+    border: 1px dashed #e5e7eb;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.reviews-placeholder__text {
+    margin: 0.75rem 0 0;
+    color: #4b5563;
+    font-size: 0.98rem;
+}
+
+.reviews-more {
+    margin: 0 0 1.5rem;
+    font-size: 0.95rem;
+}
+
+.reviews-more a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.reviews-more a:hover {
+    text-decoration: underline;
 }
 
 .reviews-empty {

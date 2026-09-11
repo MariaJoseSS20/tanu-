@@ -69,10 +69,11 @@
   },
   "reviews": {
     "title": "Reviews",
-    "lead": "See what our guests say and leave your review on Google. You help other travelers and Turismo Tanu.",
-    "empty": "We're still gathering featured reviews. Be among the first to share yours on Google!",
+    "lead": "Reviews from guests who traveled with us. Leave yours on Google and it can appear here too.",
+    "empty": "Star reviews will show up here soon. In the meantime, you can leave yours on Google.",
     "googleCta": "Leave a Google review",
-    "seeOnGoogle": "See reviews on Google"
+    "seeOnGoogle": "See all reviews on Google →",
+    "fromGoogle": "Google"
   },
   "contact": {
     "title": "Contact Us",

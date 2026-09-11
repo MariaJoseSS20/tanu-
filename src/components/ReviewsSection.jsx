@@ -1,9 +1,13 @@
 import { useTranslation } from 'react-i18next';
-import { GOOGLE_REVIEW_URL, testimonials } from '../data/testimonials.js';
+import {
+  GOOGLE_REVIEW_URL,
+  GOOGLE_REVIEWS_LIST_URL,
+  testimonials,
+} from '../data/testimonials.js';
 
-function Stars({ value }) {
+function Stars({ value, size = 'md' }) {
   return (
-    <span className="reviews-stars" aria-hidden="true">
+    <span className={`reviews-stars reviews-stars--${size}`} aria-hidden="true">
       {'★'.repeat(value)}
       <span className="reviews-stars__empty">{'★'.repeat(Math.max(0, 5 - value))}</span>
     </span>
@@ -12,34 +16,38 @@ function Stars({ value }) {
 
 export default function ReviewsSection() {
   const { t } = useTranslation();
+  const hasReviews = testimonials.length > 0;
 
   return (
     <section id="opiniones" className="section reviews-section">
       <h2 className="section-title">{t('reviews.title')}</h2>
       <p className="reviews-lead">{t('reviews.lead')}</p>
 
-      {testimonials.length > 0 ? (
-        <ul className="reviews-list">
-          {testimonials.map((item) => (
-            <li key={item.id} className="reviews-item">
-              <Stars value={item.rating} />
-              <blockquote className="reviews-quote">
-                {item.text ? <p>“{item.text}”</p> : null}
-                <footer>
-                  — {item.name}
-                  {item.serviceKey ? (
-                    <span className="reviews-service">
-                      {' '}
-                      · {t(`services.${item.serviceKey}`, { defaultValue: item.serviceKey })}
-                    </span>
-                  ) : null}
-                </footer>
-              </blockquote>
-            </li>
-          ))}
-        </ul>
+      {hasReviews ? (
+        <>
+          <ul className="reviews-list">
+            {testimonials.map((item) => (
+              <li key={item.id} className="reviews-card">
+                <div className="reviews-card__top">
+                  <Stars value={item.rating} />
+                  <span className="reviews-card__source">{t('reviews.fromGoogle')}</span>
+                </div>
+                {item.text ? <p className="reviews-card__text">“{item.text}”</p> : null}
+                <p className="reviews-card__author">— {item.name}</p>
+              </li>
+            ))}
+          </ul>
+          <p className="reviews-more">
+            <a href={GOOGLE_REVIEWS_LIST_URL} target="_blank" rel="noopener noreferrer">
+              {t('reviews.seeOnGoogle')}
+            </a>
+          </p>
+        </>
       ) : (
-        <p className="reviews-empty">{t('reviews.empty')}</p>
+        <div className="reviews-placeholder">
+          <Stars value={5} size="lg" />
+          <p className="reviews-placeholder__text">{t('reviews.empty')}</p>
+        </div>
       )}
 
       <div className="reviews-actions">
@@ -50,14 +58,6 @@ export default function ReviewsSection() {
           rel="noopener noreferrer"
         >
           {t('reviews.googleCta')}
-        </a>
-        <a
-          href={GOOGLE_REVIEW_URL}
-          className="reviews-btn reviews-btn--form"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t('reviews.seeOnGoogle')}
         </a>
       </div>
     </section>

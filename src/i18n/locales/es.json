@@ -69,10 +69,11 @@
   },
   "reviews": {
     "title": "Opiniones",
-    "lead": "Lee lo que dicen nuestros clientes y deja tu reseña en Google. Así ayudas a otros viajeros y a Turismo Tanu.",
-    "empty": "Aún estamos reuniendo reseñas destacadas. ¡Sé de los primeros en opinar en Google!",
+    "lead": "Reseñas de quienes viajaron con nosotros. Déjanos la tuya en Google y aparecerá también aquí.",
+    "empty": "Pronto verás aquí reseñas con estrellas. Mientras, puedes dejar la tuya en Google.",
     "googleCta": "Dejar reseña en Google",
-    "seeOnGoogle": "Ver reseñas en Google"
+    "seeOnGoogle": "Ver todas las reseñas en Google →",
+    "fromGoogle": "Google"
   },
   "contact": {
     "title": "Contáctanos",
