@@ -7,6 +7,7 @@ import TourVideo from '../components/TourVideo.jsx';
 import GalleryAlbum from '../components/GalleryAlbum.jsx';
 import ServiceCarouselPreview from '../components/ServiceCarouselPreview.jsx';
 import ContactSection from '../components/ContactSection.jsx';
+import ReviewsSection from '../components/ReviewsSection.jsx';
 import DestinationsModal from '../components/modals/DestinationsModal.jsx';
 import { galleryImages } from '../data/galleryImages.js';
 import { outOfCityDestinations } from '../data/outOfCityDestinations.js';
@@ -250,6 +251,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ReviewsSection />
 
       <ContactSection />
 

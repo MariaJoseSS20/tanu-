@@ -66,6 +66,7 @@ export default function SiteNavbar({ activePage = 'home' }) {
             <Nav.Item>{sectionLink('#transporte', t('nav.transport'))}</Nav.Item>
             <Nav.Item>{sectionLink('#galeria', t('nav.gallery'))}</Nav.Item>
             <Nav.Item>{sectionLink('#quienes-somos', t('nav.about'))}</Nav.Item>
+            <Nav.Item>{sectionLink('#opiniones', t('nav.reviews'))}</Nav.Item>
             <Nav.Item>{sectionLink('#contacto', t('nav.contact'))}</Nav.Item>
             <Nav.Item className="d-none d-lg-block">
               <LanguageSwitcher scrolled={scrolled} showLabels />

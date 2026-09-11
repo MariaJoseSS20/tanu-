@@ -27,10 +27,10 @@ export default function ServiceCarouselPreview({
     <Carousel
       activeIndex={activeIndex}
       onSelect={setActiveIndex}
-      interval={4000}
+      interval={null}
       controls={showControls}
       indicators
-      pause="hover"
+      pause={false}
       className={`service-preview-carousel ${fitClass}`.trim()}
       touch
     >
