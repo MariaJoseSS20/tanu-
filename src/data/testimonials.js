@@ -20,5 +20,5 @@ export const GOOGLE_REVIEW_URL = 'https://g.page/r/CT7vgKYJrmXwEAE/review';
 
 export const REVIEW_FORM_EMAIL = 'turismotanu@gmail.com';
 
-/** Formspree form ID (https://formspree.io/f/...) */
-export const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID || 'mvkoyvja';
+/** Formspree form ID (https://formspree.io/f/mvkoyvja) */
+export const FORMSPREE_ID = 'mvkoyvja';

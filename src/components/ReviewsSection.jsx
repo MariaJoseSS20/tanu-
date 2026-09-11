@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { contactInfo } from '../data/contact.js';
 import {
   FORMSPREE_ID,
   GOOGLE_REVIEW_URL,
-  REVIEW_FORM_EMAIL,
   testimonials,
 } from '../data/testimonials.js';
 
@@ -25,8 +23,6 @@ export default function ReviewsSection() {
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
   const [rating, setRating] = useState(5);
 
-  const formspreeId = FORMSPREE_ID;
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.currentTarget;
@@ -37,31 +33,12 @@ export default function ReviewsSection() {
     setStatus('sending');
 
     try {
-      if (formspreeId) {
-        const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
-          method: 'POST',
-          body: data,
-          headers: { Accept: 'application/json' },
-        });
-        if (!response.ok) throw new Error('formspree_error');
-      } else {
-        // Vista previa local sin Formspree: abre el cliente de correo
-        const name = data.get('name') || '';
-        const email = data.get('email') || '';
-        const service = data.get('service') || '';
-        const message = data.get('message') || '';
-        const body = [
-          `Nombre: ${name}`,
-          `Email: ${email}`,
-          `Servicio: ${service}`,
-          `Estrellas: ${rating}`,
-          '',
-          message,
-        ].join('\n');
-        window.location.href = `mailto:${REVIEW_FORM_EMAIL}?subject=${encodeURIComponent(
-          t('reviews.emailSubject'),
-        )}&body=${encodeURIComponent(body)}`;
-      }
+      const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      });
+      if (!response.ok) throw new Error('formspree_error');
 
       setStatus('success');
       form.reset();
@@ -172,9 +149,6 @@ export default function ReviewsSection() {
 
           {status === 'success' && <p className="reviews-feedback reviews-feedback--ok">{t('reviews.success')}</p>}
           {status === 'error' && <p className="reviews-feedback reviews-feedback--err">{t('reviews.error')}</p>}
-          {!formspreeId && (
-            <p className="reviews-form-hint">{t('reviews.previewHint', { email: contactInfo.email })}</p>
-          )}
         </form>
       )}
     </section>
