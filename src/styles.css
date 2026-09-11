@@ -1010,6 +1010,14 @@ body {
     color: var(--primary-color);
 }
 
+.reviews-honeypot {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 .footer {
     background-color: var(--primary-color);
     color: var(--text-light);

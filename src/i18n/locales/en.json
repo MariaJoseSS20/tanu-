@@ -73,7 +73,7 @@
     "googleCta": "Leave a Google review",
     "formCta": "Write a comment here",
     "hideForm": "Close form",
-    "formNote": "Your comment is emailed to our team. We review it before publishing.",
+    "formNote": "Your comment is emailed to our team. We review it before publishing. Fields marked * are required.",
     "name": "Name",
     "email": "Email (optional)",
     "service": "Service",
@@ -85,6 +85,7 @@
     "sending": "Sending…",
     "success": "Thank you! We received your comment.",
     "error": "Could not send. Please try again or message us on WhatsApp.",
+    "validationRequired": "Please fill in name, service, rating, and comment.",
     "emailSubject": "New review from turismotanu.cl",
     "previewHint": "Preview: without Formspree configured, submit opens your email to {{email}}.",
     "services": {

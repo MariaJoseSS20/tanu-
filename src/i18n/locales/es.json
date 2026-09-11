@@ -73,7 +73,7 @@
     "googleCta": "Dejar reseña en Google",
     "formCta": "Escribir un comentario aquí",
     "hideForm": "Cerrar formulario",
-    "formNote": "Tu comentario llega por email al equipo. Lo revisamos antes de publicarlo.",
+    "formNote": "Tu comentario llega por email al equipo. Lo revisamos antes de publicarlo. Campos con * son obligatorios.",
     "name": "Nombre",
     "email": "Email (opcional)",
     "service": "Servicio",
@@ -85,6 +85,7 @@
     "sending": "Enviando…",
     "success": "¡Gracias! Recibimos tu comentario.",
     "error": "No se pudo enviar. Intenta de nuevo o escríbenos por WhatsApp.",
+    "validationRequired": "Completa nombre, servicio, calificación y comentario.",
     "emailSubject": "Nueva opinión desde turismotanu.cl",
     "previewHint": "Vista previa: sin Formspree configurado, el envío abre tu correo hacia {{email}}.",
     "services": {
