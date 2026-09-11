@@ -954,6 +954,17 @@ body {
     color: var(--text-dark);
 }
 
+.reviews-field--invalid input,
+.reviews-field--invalid select {
+    border-color: var(--primary-color);
+}
+
+.reviews-field-error {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
 .reviews-field input:focus,
 .reviews-field select:focus,
 .reviews-field textarea:focus {
@@ -1008,13 +1019,6 @@ body {
 
 .reviews-feedback--err {
     color: var(--primary-color);
-}
-
-.reviews-rating-hint {
-    margin: 0.35rem 0 0;
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #6b7280;
 }
 
 .reviews-honeypot {
