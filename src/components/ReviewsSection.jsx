@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { contactInfo } from '../data/contact.js';
 import {
+  FORMSPREE_ID,
   GOOGLE_REVIEW_URL,
   REVIEW_FORM_EMAIL,
   testimonials,
@@ -24,7 +25,7 @@ export default function ReviewsSection() {
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
   const [rating, setRating] = useState(5);
 
-  const formspreeId = import.meta.env.VITE_FORMSPREE_ID;
+  const formspreeId = FORMSPREE_ID;
 
   const handleSubmit = async (event) => {
     event.preventDefault();

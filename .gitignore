@@ -3,6 +3,8 @@ dist
 .DS_Store
 .venv
 .vercel
+.env
+.env.local
 /videos/
 videos-original-backup/
 images-original-backup/
