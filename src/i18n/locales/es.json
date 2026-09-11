@@ -69,33 +69,10 @@
   },
   "reviews": {
     "title": "Opiniones",
-    "lead": "Lo que dicen quienes viajaron con Tänu. También puedes dejarnos la tuya.",
+    "lead": "Lee lo que dicen nuestros clientes y deja tu reseña en Google. Así ayudas a otros viajeros y a Turismo Tanu.",
+    "empty": "Aún estamos reuniendo reseñas destacadas. ¡Sé de los primeros en opinar en Google!",
     "googleCta": "Dejar reseña en Google",
-    "formCta": "Escribir un comentario aquí",
-    "hideForm": "Cerrar formulario",
-    "formNote": "Tu comentario llega por email al equipo. Lo revisamos antes de publicarlo. Campos con * son obligatorios.",
-    "name": "Nombre",
-    "email": "Email (opcional)",
-    "service": "Servicio",
-    "servicePlaceholder": "Selecciona un servicio",
-    "rating": "Calificación",
-    "ratingValue": "{{count}} estrellas",
-    "message": "Comentario (opcional)",
-    "submit": "Enviar comentario",
-    "sending": "Enviando…",
-    "success": "¡Gracias! Recibimos tu comentario.",
-    "error": "No se pudo enviar. Intenta de nuevo o escríbenos por WhatsApp.",
-    "errorName": "Ingresa tu nombre.",
-    "errorService": "Selecciona un servicio.",
-    "errorRating": "Elige una calificación.",
-    "emailSubject": "Nueva opinión desde turismotanu.cl",
-    "services": {
-      "transport": "Transporte",
-      "pinguineras": "Tours a Pingüineras",
-      "porvenir": "Tours Porvenir",
-      "outOfCity": "Viajes fuera de la ciudad",
-      "other": "Otro"
-    }
+    "seeOnGoogle": "Ver reseñas en Google"
   },
   "contact": {
     "title": "Contáctanos",
