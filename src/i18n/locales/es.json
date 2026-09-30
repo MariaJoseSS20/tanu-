@@ -69,9 +69,11 @@
   },
   "reviews": {
     "title": "Opiniones",
-    "lead": "Reseñas reales de Google de quienes viajaron con Turismo Tanu. También puedes dejar la tuya.",
+    "lead": "Lee las reseñas de Turismo Tanu en Google o deja la tuya. Es gratis y ayuda a otros viajeros.",
+    "empty": "Las reseñas se publican en Google. Déjanos la tuya o míralas en nuestra ficha.",
     "googleCta": "Dejar reseña en Google",
-    "seeOnGoogle": "Ver ficha en Google"
+    "seeOnGoogle": "Ver reseñas en Google",
+    "fromGoogle": "Google"
   },
   "contact": {
     "title": "Contáctanos",

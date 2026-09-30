@@ -69,9 +69,11 @@
   },
   "reviews": {
     "title": "Reviews",
-    "lead": "Real Google reviews from guests who traveled with Turismo Tanu. You can leave yours too.",
+    "lead": "Read Turismo Tanu reviews on Google or leave yours. It's free and helps other travelers.",
+    "empty": "Reviews are published on Google. Leave yours or view them on our profile.",
     "googleCta": "Leave a Google review",
-    "seeOnGoogle": "View Google profile"
+    "seeOnGoogle": "See reviews on Google",
+    "fromGoogle": "Google"
   },
   "contact": {
     "title": "Contact Us",
