@@ -48,7 +48,7 @@ export default function Home() {
   const outOfCityPreview = withCardPreview(outOfCity, '/images/services/previews/fuera.jpg');
   const rutaDeLosLagosPreview = withCardPreview(
     rutaDeLosLagos,
-    '/images/services/previews/ruta-de-los-lagos.jpg',
+    '/images/services/ruta-de-los-lagos/flyer.jpg',
   );
 
   useEffect(() => {
@@ -166,11 +166,12 @@ export default function Home() {
               {t('services.viewDetails')}
             </button>
           </div>
-          <div className="service-card service-card--carousel">
+          <div className="service-card service-card--carousel service-card--flyer">
             <ServiceCarouselPreview
               destinations={rutaDeLosLagosPreview}
-              showControls
               hideCaptions
+              imageFit="contain"
+              maxSlides={1}
             />
             <h3>{t('services.rutaDeLosLagos')}</h3>
             <button

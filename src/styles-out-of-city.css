@@ -3,6 +3,22 @@
     overflow: hidden;
 }
 
+/* Flyer completo sin estirar las otras cards (grid usa align-items: start) */
+.service-card--flyer .service-preview-carousel,
+.service-card--flyer .service-preview-carousel .carousel-inner,
+.service-card--flyer .service-preview-carousel .carousel-item,
+.service-card--flyer .service-preview-carousel img,
+.service-card--flyer .service-preview-carousel--contain img,
+.service-card--flyer .service-preview-placeholder {
+    height: 420px;
+}
+
+.service-card--flyer .service-preview-carousel--contain .carousel-inner,
+.service-card--flyer .service-preview-carousel--contain .carousel-item,
+.service-card--flyer .service-preview-carousel--contain img {
+    background-color: #f4f6f8;
+}
+
 .service-preview-carousel {
     height: 200px;
 }
