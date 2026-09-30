@@ -35,7 +35,8 @@
     "transport": "Transport",
     "pinguineras": "Penguin Colony Tours",
     "porvenir": "Porvenir Tours",
-    "outOfCity": "Trips outside the city"
+    "outOfCity": "Trips outside the city",
+    "rutaDeLosLagos": "The Lakes Route"
   },
   "toursSection": {
     "title": "Tours and Excursions",

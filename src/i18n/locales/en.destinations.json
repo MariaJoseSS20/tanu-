@@ -273,6 +273,40 @@
         "name": "Puerto Natales",
         "description": "Gateway to Torres del Paine."
       }
+    },
+    "rutaDeLosLagos": {
+      "laguna-de-los-cisnes": {
+        "name": "Laguna de los Cisnes",
+        "description": "Lagoon with black-necked swans and Tierra del Fuego landscapes.",
+        "highlights": {
+          "0": "Stop 1 on The Lakes Route",
+          "1": "Birdwatching and nature"
+        }
+      },
+      "laguna-verde": {
+        "name": "Laguna Verde",
+        "description": "A wide lagoon on the Fuegian steppe, ideal for photography.",
+        "highlights": {
+          "0": "Stop 2 on The Lakes Route",
+          "1": "Open landscapes and unique colors"
+        }
+      },
+      "lago-serrano": {
+        "name": "Lago Serrano",
+        "description": "A mirror-like lake in southern Patagonia.",
+        "highlights": {
+          "0": "Stop 3 on The Lakes Route",
+          "1": "Nature and calm"
+        }
+      },
+      "laguna-de-la-sal": {
+        "name": "Laguna de la Sal",
+        "description": "A lagoon with reflections and the distinctive light of the end of the world.",
+        "highlights": {
+          "0": "Stop 4 on The Lakes Route",
+          "1": "Connection with nature"
+        }
+      }
     }
   },
   "gallery": {

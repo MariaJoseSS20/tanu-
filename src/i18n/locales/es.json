@@ -35,7 +35,8 @@
     "transport": "Transporte",
     "pinguineras": "Tours a Pingüineras",
     "porvenir": "Tours Porvenir",
-    "outOfCity": "Viajes fuera de la ciudad"
+    "outOfCity": "Viajes fuera de la ciudad",
+    "rutaDeLosLagos": "La Ruta de los Lagos"
   },
   "toursSection": {
     "title": "Tours y Excursiones",

@@ -11,6 +11,7 @@ import ReviewsSection from '../components/ReviewsSection.jsx';
 import DestinationsModal from '../components/modals/DestinationsModal.jsx';
 import { galleryImages } from '../data/galleryImages.js';
 import { outOfCityDestinations } from '../data/outOfCityDestinations.js';
+import { rutaDeLosLagosDestinations } from '../data/rutaDeLosLagosDestinations.js';
 import { toursPorvenirDestinations } from '../data/toursPorvenirDestinations.js';
 import { toursPinguinerasDestinations } from '../data/toursPinguinerasDestinations.js';
 import { transporteDestinations } from '../data/transporteDestinations.js';
@@ -29,6 +30,7 @@ export default function Home() {
   const { t } = useTranslation();
   const whatsApp = useWhatsAppMessages();
   const [showOutOfCityModal, setShowOutOfCityModal] = useState(false);
+  const [showRutaDeLosLagosModal, setShowRutaDeLosLagosModal] = useState(false);
   const [showToursPorvenirModal, setShowToursPorvenirModal] = useState(false);
   const [showToursPinguinerasModal, setShowToursPinguinerasModal] = useState(false);
   const [showTransporteModal, setShowTransporteModal] = useState(false);
@@ -37,12 +39,17 @@ export default function Home() {
   const pinguineras = useLocalizedDestinations(toursPinguinerasDestinations, 'pinguineras');
   const porvenir = useLocalizedDestinations(toursPorvenirDestinations, 'porvenir');
   const outOfCity = useLocalizedDestinations(outOfCityDestinations, 'outOfCity');
+  const rutaDeLosLagos = useLocalizedDestinations(rutaDeLosLagosDestinations, 'rutaDeLosLagos');
   const gallery = useLocalizedGallery(galleryImages);
 
   const transportePreview = withCardPreview(transporte, '/images/services/previews/bus.jpg');
   const pinguinerasPreview = withCardPreview(pinguineras, '/images/services/previews/pinguineras.jpg');
   const porvenirPreview = withCardPreview(porvenir, '/images/services/previews/porvenir.jpg');
   const outOfCityPreview = withCardPreview(outOfCity, '/images/services/previews/fuera.jpg');
+  const rutaDeLosLagosPreview = withCardPreview(
+    rutaDeLosLagos,
+    '/images/services/previews/ruta-de-los-lagos.jpg',
+  );
 
   useEffect(() => {
     if (location.hash) {
@@ -155,6 +162,17 @@ export default function Home() {
               type="button"
               className="tour-link border-0 bg-transparent"
               onClick={() => setShowOutOfCityModal(true)}
+            >
+              {t('services.viewDetails')}
+            </button>
+          </div>
+          <div className="service-card service-card--carousel">
+            <ServiceCarouselPreview destinations={rutaDeLosLagosPreview} showControls />
+            <h3>{t('services.rutaDeLosLagos')}</h3>
+            <button
+              type="button"
+              className="tour-link border-0 bg-transparent"
+              onClick={() => setShowRutaDeLosLagosModal(true)}
             >
               {t('services.viewDetails')}
             </button>
@@ -282,6 +300,12 @@ export default function Home() {
         onHide={() => setShowOutOfCityModal(false)}
         title={t('services.outOfCity')}
         destinations={outOfCity}
+      />
+      <DestinationsModal
+        show={showRutaDeLosLagosModal}
+        onHide={() => setShowRutaDeLosLagosModal(false)}
+        title={t('services.rutaDeLosLagos')}
+        destinations={rutaDeLosLagos}
       />
     </>
   );
