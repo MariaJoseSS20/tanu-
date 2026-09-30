@@ -3,6 +3,25 @@
     overflow: hidden;
 }
 
+/* Flyer vertical completo en la card (proporción legible) */
+.service-card--flyer .service-preview-carousel,
+.service-card--flyer .service-preview-carousel .carousel-inner,
+.service-card--flyer .service-preview-carousel .carousel-item,
+.service-card--flyer .service-preview-carousel img,
+.service-card--flyer .service-preview-carousel--contain img,
+.service-card--flyer .service-preview-placeholder {
+    height: 320px;
+}
+
+.service-card--flyer .service-preview-carousel--contain .carousel-inner,
+.service-card--flyer .service-preview-carousel--contain .carousel-item {
+    background-color: #f4f6f8;
+}
+
+.service-card--flyer .service-preview-carousel--contain img {
+    background-color: #f4f6f8;
+}
+
 .service-preview-carousel {
     height: 200px;
 }
