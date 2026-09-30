@@ -123,6 +123,17 @@ export default function Home() {
         <h2 className="section-title">{t('services.title')}</h2>
         <div className="grid-container">
           <div className="service-card service-card--carousel">
+            <ServiceCarouselPreview destinations={rutaDeLosLagosPreview} showControls />
+            <h3>{t('services.rutaDeLosLagos')}</h3>
+            <button
+              type="button"
+              className="tour-link border-0 bg-transparent"
+              onClick={() => setShowRutaDeLosLagosModal(true)}
+            >
+              {t('services.viewDetails')}
+            </button>
+          </div>
+          <div className="service-card service-card--carousel">
             <ServiceCarouselPreview destinations={transportePreview} showControls />
             <h3>{t('services.transport')}</h3>
             <button
@@ -162,17 +173,6 @@ export default function Home() {
               type="button"
               className="tour-link border-0 bg-transparent"
               onClick={() => setShowOutOfCityModal(true)}
-            >
-              {t('services.viewDetails')}
-            </button>
-          </div>
-          <div className="service-card service-card--carousel">
-            <ServiceCarouselPreview destinations={rutaDeLosLagosPreview} showControls />
-            <h3>{t('services.rutaDeLosLagos')}</h3>
-            <button
-              type="button"
-              className="tour-link border-0 bg-transparent"
-              onClick={() => setShowRutaDeLosLagosModal(true)}
             >
               {t('services.viewDetails')}
             </button>
